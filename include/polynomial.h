@@ -1,12 +1,14 @@
 #ifndef POLYNOMIAL_H
 #define POLYNOMIAL_H
 
+#include <stdint.h>
+
 typedef struct {
-    size_t degree;         
+    uint32_t degree;         
     double *coeffs;     
 } Polynomial;
 
-Polynomial* poly_create(size_t degree);
+Polynomial* poly_create(uint32_t degree);
 void poly_free(Polynomial *p);
 
 void poly_set_coeff(Polynomial *p, int power, double coeff);
