@@ -11,7 +11,7 @@ typedef struct {
 Polynomial* poly_create(uint32_t degree);
 void poly_free(Polynomial *p);
 
-void poly_set_coeff(Polynomial *p, int power, double coeff);
+void poly_set_coeff(Polynomial *p, uint32_t power, double coeff);
 double poly_get_coeff(const Polynomial *p, int power);
 
 Polynomial* poly_add(const Polynomial *p1, const Polynomial *p2);
